@@ -1,0 +1,25 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Average';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/average-v18-latin-regular.eot'); 
+    src: url('../fonts/average-v18-latin-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/average-v18-latin-regular.woff2') format('woff2'),
+         url('../fonts/average-v18-latin-regular.woff') format('woff'),
+         url('../fonts/average-v18-latin-regular.ttf') format('truetype'),
+         url('../fonts/average-v18-latin-regular.svg#Average') format('svg');
+  }
+
+@font-face {
+    font-display: swap; 
+    font-family: 'Hanalei';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/hanalei-v23-latin-regular.eot');
+    src: url('../fonts/hanalei-v23-latin-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/hanalei-v23-latin-regular.woff2') format('woff2'),
+         url('../fonts/hanalei-v23-latin-regular.woff') format('woff'),
+         url('../fonts/hanalei-v23-latin-regular.ttf') format('truetype'),
+         url('../fonts/hanalei-v23-latin-regular.svg#Hanalei') format('svg');
+  }

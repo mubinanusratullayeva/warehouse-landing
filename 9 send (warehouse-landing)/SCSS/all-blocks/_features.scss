@@ -1,0 +1,66 @@
+@use'../variables';
+@use'../mixin';
+
+.features{
+    margin-top: 150px;
+    &__block{
+        &-title{
+            font-family: variables.$title-font;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 130%;
+            text-align: center;
+            color: variables.$primary-color;
+        }
+        &-text{
+            max-width: 584px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 160%;
+            text-align: center;
+            margin-top: 50px;
+            margin: 50px auto 0;
+        }
+        &-team{
+            margin-top: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            row-gap: 50px;
+        }
+        &-card{
+            display: flex;
+            column-gap: 33px;
+            @include mixin.card(#68c9ba26);
+            img{
+                object-fit: contain;
+                margin-left: -100px;
+            }
+            &--title{
+                font-family: variables.$secondary-font;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 130%;
+                color: variables.$primary-color;
+            }
+            &--text{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 160%;
+                max-width: 220px;
+                margin: 20px 0;
+            }
+            &--btn{
+                font-weight: 800;
+                font-size: 16px;
+                line-height: 160%;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.005em;
+                color: variables.$primary-color;
+                column-gap: 20px;   
+                cursor: pointer;
+            }
+        }
+    }
+}

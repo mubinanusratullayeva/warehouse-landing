@@ -1,0 +1,38 @@
+@use './variables';
+@mixin centreItems($justify:false){
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+}
+
+@mixin learnbtn ($btnColor){
+    width: 170px;
+    height: 60px;
+    background-color: $btnColor;
+    border-radius: 50px;
+    font-family: variables.$secondary-font;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 160%;
+    text-align: center;
+    cursor: pointer;
+    color: variables.$main-color;
+    border: none;
+}
+
+@mixin card ($bgColor){
+    padding: 49px 50px 33px 0;
+    max-width: 442px;
+    background-color: $bgColor;
+    border-radius: 50px;
+    min-height: 211px;
+    // background-image: $bgImg;
+    background-repeat: no-repeat;
+    background-size: contain;
+    // @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    //     background-image: $bgImgx;
+    //     background-repeat: no-repeat;
+    //     background-size: contain;
+    //     min-height: 211px;
+    // }
+}

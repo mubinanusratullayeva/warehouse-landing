@@ -1,0 +1,77 @@
+@use'../mixin';
+@use'../variables';
+header{
+    margin-top: 50px;
+    nav{
+        .navbar{
+            @include mixin.centreItems(space-between);
+            &__flexbox{
+                @include mixin.centreItems(space-between);
+                width: 88%;
+            }
+            &__menu{
+               @include mixin.centreItems(space-between);
+               width: 30%;
+               text-transform: capitalize;
+               &-link{
+                padding: 17px 0;
+                cursor: pointer;
+               }
+               &-link:hover{
+                color: variables.$primary-color;
+                font-weight: 800;
+                font-size: 16px;
+                line-height: 160%;
+                transition: 0.2s;
+               }
+               &-link{
+               font-weight: 500;
+               font-size: 16px;
+               line-height: 160%;
+               color: variables.$secondary-color;
+               }  
+            }
+        }
+    }
+    .hero{
+        margin-top: 130px;
+        background-image: url(../../images/intro-img.jpg);
+        height: 468px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        @media only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min--moz-device-pixel-ratio: 2),
+        only screen and (-o-min-device-pixel-ratio: 2/1),
+        only screen and (min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 192dpi),
+        only screen and (min-resolution: 2dppx){
+            background-image: url(../../images/intro-img@2x.jpg);
+            height: 468px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position-x: right;
+        }
+        &__decoration{
+            &-title{
+                max-width: 645px;
+                font-family: 'Helvetica';
+                font-weight: 700;
+                font-size: 80px;
+                line-height: 110%;
+                color: variables.$primary-color;
+            } 
+            &-text{
+                max-width: 381px;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 160%;
+                letter-spacing: 1px;
+                margin: 50px 0;
+            }
+            &-btn{
+                @include mixin.learnbtn(#9C69E2);
+            }
+        }
+    }
+}
+

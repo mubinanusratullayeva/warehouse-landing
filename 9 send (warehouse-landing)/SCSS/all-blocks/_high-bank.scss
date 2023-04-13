@@ -1,0 +1,29 @@
+@use'../mixin';
+@use'../variables';
+@use'../fonts';
+.highLevel{
+    padding: 200px 93px 24px 11px;
+    margin-top: 100px;
+    &__flexbox{
+        background: rgba(240, 99, 184, 0.15);
+        border-radius: 50px;
+        @include mixin.centreItems(space-around);
+        &-decoration{
+            &--title{
+                font-family: variables.$title-font;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 130%;
+                color: variables.$primary-color;
+                max-width: 475px;
+            }
+            &--text{
+                max-width: 474px;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 160%;
+                margin-top: 40px;
+            }   
+        }
+    }
+}

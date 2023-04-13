@@ -1,0 +1,89 @@
+@use'../variables';
+@use'../mixin';
+.footerSection{
+    margin-top: 121px;
+    &__flexbox{
+        @include mixin.centreItems(space-between);
+    }
+    &__title{
+        font-family: variables.$title-font;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 130%;
+        color: variables.$primary-color;
+    }
+    &__text{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    margin-top: 20px;
+    }
+    &__btnBox{
+        @include mixin.centreItems(space-between);
+        min-width: 38%;
+    }
+    &__btn{
+        @include mixin.learnbtn(#F063B8);
+    }
+    &__blockLink{
+      @include mixin.centreItems(space-between);
+      margin-top: 153px;
+      .flexLogo{
+        img{
+            display: inline-block;
+        }
+        &__logot{
+            font-weight: 900;
+            font-size: 20px;
+            line-height: 160%;
+            color: variables.$primary-color;
+            margin-left: 20px;
+            display: inline-block;
+        }
+        &__text{
+            max-width: 300px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 180%;
+            letter-spacing: 0.01em;
+            color: variables.$primary-color;
+            margin-top: 65px;
+        }
+        &__link{
+            max-width: 290px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 180%;
+            letter-spacing: 0.01em;
+            color: variables.$primary-color;
+            margin-top: 10px;
+        }
+      }
+      &-menu{
+        &--list{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 250%;
+            color: variables.$primary-color;
+            margin-top: 10px;
+        }
+      }
+      &-icon{
+        @include mixin.centreItems(space-between);
+        column-gap: 14px;
+        margin-top: 30px;
+      }
+    }
+    .foot{
+        @include mixin.centreItems(space-between);
+        margin-top: 118px;
+        p{
+            max-width: 360px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 180%;
+            letter-spacing: 0.01em;
+            color: variables.$primary-color;
+        }
+    }
+}
